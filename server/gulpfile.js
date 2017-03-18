@@ -23,7 +23,7 @@ gulp.task('build', ['clean'], function () {
 gulp.task('default', ['build']);
 
 gulp.task('watch', ['scripts'], function() {
-  gulp.watch('src/*.ts', ['clean', 'build', 'start']);
+  gulp.watch('src/*.ts', ['start']);
 });
 
 gulp.task('start', ['clean', 'build'], function () {
